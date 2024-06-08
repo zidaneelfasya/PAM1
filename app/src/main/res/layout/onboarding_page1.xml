@@ -17,7 +17,7 @@
         android:id="@+id/textViewTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Step  into titit a Healthier Life with Lifestep"
+        android:text="Step dadda into titit a Healthier Life with Lifestep"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
