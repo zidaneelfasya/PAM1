@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
             R.layout.onboarding_page2,
             R.layout.onboarding_page3
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
