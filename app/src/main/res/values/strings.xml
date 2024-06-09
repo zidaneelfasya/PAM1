@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ProjekPAM</string>
+    <string-array name="makanan_array">
+        <item>Pilih Jenis Makanan</item>
+        <item>Nasi</item>
+        <item>Ayam</item>
+        <item>Sayur</item>
+        <item>Buah</item>
+    </string-array>
 </resources>
