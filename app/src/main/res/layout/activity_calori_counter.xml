@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:text="Penghitungan Nutrisi dan Kalori"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hitungkalori"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/textViewSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hitung Makananmu"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makanan Apa Yang Kamu Makan"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinnerMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/makanan_array"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Dalam Sajian"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etBerat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dalam Satuan Gram"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:backgroundTint="#66D3A4"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
