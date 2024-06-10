@@ -1,11 +1,13 @@
 package com.example.projekpam;
-
+import java.util.List;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 public class MainActivity extends AppCompatActivity {
 
+    private JadwalWorkoutActivity RecycleView;
+    private WorkoutAdapter adapter;
+    private List<Workout> workoutList;
     private ViewPager viewPager;
     private int[] layouts = {
             R.layout.onboarding_page1,
@@ -20,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         OnboardingPagerAdapter adapter = new OnboardingPagerAdapter(this, layouts);
         viewPager.setAdapter(adapter);
+
     }
 }

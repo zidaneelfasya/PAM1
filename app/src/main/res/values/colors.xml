@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="hijaulogo">#28D0B5</color>
+    <color name="primary_900">#45521C</color>
+    <color name="base_white">#FFFFFF</color>
+    <color name="neutral_800">#202939</color>
+    <color name="form">#DDF7F2</color>
+    <color name="purple">#667085</color>
+    <color name="pesbuk">#6281AF</color>
+    <color name="pesbukk">#8495B8</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#A8A1A1</color>
+
 </resources>

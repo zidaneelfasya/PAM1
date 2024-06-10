@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProjekPAM</string>
+    <!-- Tambahkan ini untuk label activity jadwal workout -->
+    <string name="activity_jadwal_workout">Jadwal Workout</string>
 </resources>
