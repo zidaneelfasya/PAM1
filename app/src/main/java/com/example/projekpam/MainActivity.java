@@ -8,6 +8,7 @@ public class MainActivity extends AppCompatActivity {
     private JadwalWorkoutActivity RecycleView;
     private WorkoutAdapter adapter;
     private List<Workout> workoutList;
+    private List<Hiit> HiitList;
     private ViewPager viewPager;
     private int[] layouts = {
             R.layout.onboarding_page1,

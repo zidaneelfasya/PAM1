@@ -8,7 +8,7 @@
     android:background="@drawable/gradient_background">
 
     <ImageView
-        android:id="@+id/img_workout"
+        android:id="@+id/img_hiit"
         android:layout_width="126dp"
         android:layout_height="152dp"
         android:layout_marginEnd="8dp"
@@ -16,27 +16,24 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/editTextTitle"
+        android:id="@+id/editTextTitle2"
         android:layout_width="279dp"
         android:layout_height="48dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
         android:text="Push up"
-        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/img_workout"
-        app:layout_constraintTop_toTopOf="@+id/img_workout" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/img_hiit"
+        app:layout_constraintTop_toTopOf="@+id/img_hiit" />
 
     <TextView
-        android:id="@+id/editTextDescription"
+        android:id="@+id/editTextDescription2"
         android:layout_width="285dp"
         android:layout_height="37dp"
-        android:layout_marginStart="4dp"
         android:text="5x"
-        android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/img_workout"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/img_hiit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

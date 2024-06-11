@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:background="@drawable/gradient_background2"
-    android:orientation="vertical">
+    tools:context=".WorkoutHiitActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topbar"
@@ -17,12 +18,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/backgroundImage"
+            android:id="@+id/backgroundImage1"
             android:layout_width="428dp"
             android:layout_height="143dp"
             android:alpha="0.8"
             android:scaleType="centerCrop"
-            android:src="@drawable/workout"
+            android:src="@drawable/backgroundhiit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.875"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -37,22 +38,17 @@
             android:layout_height="75dp"
             android:layout_margin="16dp"
             android:text="Jadwal Workout
-            Harian"
-            android:textColor="@color/white"
+            HIIT"
+            android:textColor="@color/black"
             android:textSize="30dp"
             tools:layout_editor_absoluteX="5dp"
             tools:layout_editor_absoluteY="32dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_workouts"
+        android:id="@+id/rv_hiit"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
-
-
-
-
 
 </LinearLayout>
