@@ -106,7 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_reduce_waste"
+
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -131,7 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_make_compost"
+
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -165,12 +165,12 @@
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/ic_recipes"
+
             android:layout_marginRight="16dp" />
 
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/ic_community" />
+            />
     </LinearLayout>
 </RelativeLayout>
