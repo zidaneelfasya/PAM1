@@ -45,7 +45,6 @@
         android:id="@+id/spinnerMakanan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/makanan_array"
         android:layout_marginBottom="16dp" />
 
     <TextView
@@ -71,5 +70,14 @@
         android:text="Hitung"
         android:backgroundTint="#66D3A4"
         android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil perhitungan akan ditampilkan di sini"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
 
 </LinearLayout>
