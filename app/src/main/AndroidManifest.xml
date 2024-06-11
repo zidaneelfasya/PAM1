@@ -25,6 +25,26 @@
             android:exported="true"
             />
         <activity
+            android:name=".MenuutamaActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MenuActivity1"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MenuActivity2"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MenuActivity3"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MenuActivity4"
+            android:exported="true"
+            />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>

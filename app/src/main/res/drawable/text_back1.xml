@@ -3,16 +3,16 @@
     <!-- Normal State -->
     <item android:state_pressed="false">
         <shape>
-            <solid android:color="#B0F4E9"/>
+            <gradient
+                android:startColor="@color/white"
+                android:endColor="@color/blue"
+                android:angle="180" />
             <corners android:radius="16dp"/>
             <padding
                 android:left="16dp"
                 android:top="16dp"
                 android:right="16dp"
                 android:bottom="16dp" />
-            <size
-                android:width="330dp"
-                android:height="100dp" />
         </shape>
     </item>
     <!-- Pressed State -->
@@ -25,9 +25,6 @@
                 android:top="16dp"
                 android:right="16dp"
                 android:bottom="16dp" />
-            <size
-                android:width="65dp"
-                android:height="20dp" />
         </shape>
     </item>
 </selector>

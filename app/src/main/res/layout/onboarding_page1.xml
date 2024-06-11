@@ -20,7 +20,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
             android:contentDescription="Connect with NFT creators easily"
-            android:src="@drawable/gas" />
+            android:src="@drawable/ic_gas" />
 
         <TextView
             android:id="@+id/textViewTitle1"

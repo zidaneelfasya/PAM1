@@ -20,7 +20,7 @@
             android:layout_height="300dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
-            android:src="@drawable/gas" />
+            android:src="@drawable/ic_gas" />
 
         <TextView
             android:id="@+id/textViewTitle1"
