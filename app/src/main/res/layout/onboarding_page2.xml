@@ -1,31 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp">
 
-
-
-    <TextView
-        android:id="@+id/textViewTitle2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get Inspiration For Your Next NFT."
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="24dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewDesc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check the fresh NFTs and get inspiration for your new NFT"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:layout_marginTop="8dp"/>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="379dp"
+            android:layout_height="267dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Connect with NFT creators easily"
+            android:src="@drawable/gas" />
+
+        <TextView
+            android:id="@+id/textViewTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Fitur Unggulan Lifestep"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDesc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="Nikmati fitur pencatatan aktivitas, monitoring nutrisi, dan panduan latihan personal. Semua yang Anda butuhkan untuk mencapai tujuan kesehatan ada di sini."
+            android:textSize="16sp" />
+    </LinearLayout>
 
 
-</LinearLayout>
+
+</RelativeLayout>

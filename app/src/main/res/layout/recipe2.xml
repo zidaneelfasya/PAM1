@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#E0F7FA">
+
+        <!-- CardView for the image section with a white background -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <!-- Image for the salad -->
+            <ImageView
+                android:id="@+id/salad_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/smoothie" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for the text section below the image with a white background -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/text_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_card_view"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Title TextView -->
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smoothie Hijau"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Subtitle TextView -->
+                <TextView
+                    android:id="@+id/subtitle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_text"
+                    android:layout_marginTop="8dp"
+                    android:text="Resep masakan"
+                    android:textColor="#555"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for the recipe section with a white background -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recipe_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_card_view"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <!-- ScrollView containing ingredients and steps -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- LinearLayout to hold the ingredients and steps -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Ingredients Title -->
+                    <TextView
+                        android:id="@+id/ingredients_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bahan-bahan:"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Ingredients List -->
+                    <TextView
+                        android:id="@+id/ingredients_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="• 1 buah pisang\n• 1 cangkir bayam segar\n• 1/2 buah alpukat\n• 1 cangkir susu almond\n• 1 sdt madu"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <!-- Preparation Steps Title -->
+                    <TextView
+                        android:id="@+id/steps_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Cara Membuat:"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Preparation Steps List -->
+                    <TextView
+                        android:id="@+id/steps_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="1. masukkan semua bahan kedalam blender\n2. Blender hinnga halus dan sajikan segera"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/button_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keluar"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/oval_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_below="@id/steps_list"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445207721318",
+    "project_id": "pamproject-fc105",
+    "storage_bucket": "pamproject-fc105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445207721318:android:3900c09f06ec7bd9ba04a7",
+        "android_client_info": {
+          "package_name": "com.example.projekpam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI5Xh74SEvXko0mwfExML9B0VINhjq4AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

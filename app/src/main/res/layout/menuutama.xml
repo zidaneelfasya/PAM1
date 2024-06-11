@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0F7FA">
+
+    <!-- Title for the Menu -->
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resep Makanan Sehat"
+        android:textColor="@color/blue2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to navigate to the recipe screen -->
+    <Button
+        android:id="@+id/button_to_recipe_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Resep Salad Ayam Panggang"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/oval_button"
+        android:layout_below="@id/menu_title"
+        android:layout_marginTop="32dp" />
+
+    <!-- Add more buttons here as needed for other screens -->
+    <!-- Example: Another button to a different screen -->
+    <Button
+        android:id="@+id/button_to_other_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Resep Smoothie Hijau "
+        android:textColor="#FFFFFF"
+        android:background="@drawable/oval_button"
+        android:layout_below="@id/button_to_recipe_screen"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/sumberpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panduan Belanja Makanan Sehat"
+        android:textColor="@color/blue2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/button_to_other_screen"/>
+    <Button
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Resep Salad Ayam Panggang"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/oval_button"
+        android:layout_below="@id/sumberpo"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- Add more buttons here as needed for other screens -->
+    <!-- Example: Another button to a different screen -->
+    <Button
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Resep Smoothie Hijau "
+        android:textColor="#FFFFFF"
+        android:background="@drawable/oval_button"
+        android:layout_below="@id/r4"
+        android:layout_marginTop="16dp" />
+    <!-- Button to Exit or go Back to Previous Activity -->
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/oval_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
