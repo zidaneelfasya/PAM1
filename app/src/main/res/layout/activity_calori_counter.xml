@@ -75,9 +75,9 @@
         android:id="@+id/textViewHasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasil perhitungan akan ditampilkan di sini"
+        android:textColorHint="@color/black"
+        android:hint="Total Kalori:"
         android:paddingTop="16dp"
-        android:textSize="16sp"
-        android:textColor="@android:color/black" />
+        android:textSize="16sp" />
 
 </LinearLayout>
