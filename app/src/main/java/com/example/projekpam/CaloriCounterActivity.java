@@ -98,7 +98,7 @@ public class CaloriCounterActivity extends AppCompatActivity {
         Double kaloriPerGram = makananKaloriMap.get(makanan);
         if (kaloriPerGram != null) {
             double totalKalori = kaloriPerGram * berat;
-            textViewHasil.setText("Total Kalori: " + totalKalori);
+            textViewHasil.setText("Total Kalori: " + totalKalori + " kcal");
         } else {
             Toast.makeText(this, "Data kalori tidak tersedia", Toast.LENGTH_SHORT).show();
         }
