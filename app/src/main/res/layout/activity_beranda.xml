@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Reduce what you can, offset what you can’t! Gunakan Carbon Calculator kami"
+            android:text="Kurangi apa yang bisa Anda kurangi, imbangi apa yang tidak bisa! Gunakan Alat Penghitung Nutrisi dan Kalori kami"
             android:textColor="@color/blue6"
             android:textSize="16sp" />
 
@@ -226,6 +226,9 @@
             <!-- Tambahkan lebih banyak kartu sesuai kebutuhan -->
         </LinearLayout>
     </HorizontalScrollView>
+
+
+
 
     <LinearLayout
         android:id="@+id/bottom_navigation"
