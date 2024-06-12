@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Mengatur warna latar belakang menjadi putih -->
+    <solid android:color="@android:color/white" />
+
+    <!-- Menambahkan garis outline abu-abu dengan ketebalan 2dp -->
+    <stroke android:width="2dp" android:color="#808080" />
+
+    <!-- Menentukan radius sudut bawah kiri dan kanan menjadi 0dp -->
+    <corners android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+
+    <!-- Menentukan radius sudut atas kiri dan kanan menjadi 32dp -->
+    <corners android:topLeftRadius="32dp" android:topRightRadius="32dp" />
+</shape>
