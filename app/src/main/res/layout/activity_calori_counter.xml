@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hitung"
-        android:backgroundTint="#66D3A4"
+        android:background="@drawable/btn_hijau"
         android:textColor="@android:color/white" />
 
     <TextView
@@ -79,5 +79,34 @@
         android:hint="Total Kalori:"
         android:paddingTop="16dp"
         android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textViewProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Total Protein:"
+        android:paddingTop="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewLemak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="35dp"
+        android:hint="Total Lemak:"
+        android:paddingTop="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_gravity="end"
+        android:background="@drawable/btn_kembali"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="Kembali"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>

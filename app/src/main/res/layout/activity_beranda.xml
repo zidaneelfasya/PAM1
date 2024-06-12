@@ -302,7 +302,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/ic_bb"
+                android:id="@+id/ic_berat_ideal"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/ic_community" />
