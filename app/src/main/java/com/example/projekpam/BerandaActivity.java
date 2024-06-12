@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ public class BerandaActivity extends AppCompatActivity {
     private TextView tvGreeting;
     private ImageView ivGuidance; // Tambahkan variabel untuk ImageView panduan
     private ImageView icExit; // Tambahkan variabel untuk ImageView exit
+    private LinearLayout stepTracker; // Tambahkan variabel untuk LinearLayout pelacakan langkah
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class BerandaActivity extends AppCompatActivity {
         // Inisialisasi FirebaseAuth
         mAuth = FirebaseAuth.getInstance();
 
-        btncaloricounter= findViewById(R.id.calorie_calculator_button);
+        btncaloricounter = findViewById(R.id.calorie_calculator_button);
         // Temukan TextView dengan ID greeting
         tvGreeting = findViewById(R.id.greeting);
 
@@ -38,6 +40,9 @@ public class BerandaActivity extends AppCompatActivity {
 
         // Temukan ImageView dengan ID ic_exit
         icExit = findViewById(R.id.ic_exit);
+
+        // Temukan LinearLayout dengan ID step_tracker
+        stepTracker = findViewById(R.id.step_tracker);
 
         // Dapatkan pengguna saat ini
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -65,6 +70,7 @@ public class BerandaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btncaloricounter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +79,7 @@ public class BerandaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         // Atur onClickListener untuk ic_exit
         icExit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +89,16 @@ public class BerandaActivity extends AppCompatActivity {
                 mAuth.signOut();
                 startActivity(intent);
                 finish(); // Tutup activity saat ini
+            }
+        });
+
+        // Atur onClickListener untuk step_tracker
+        stepTracker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Arahkan ke StatsActivity
+                Intent intent = new Intent(BerandaActivity.this, StatsActivity.class);
+                startActivity(intent);
             }
         });
     }

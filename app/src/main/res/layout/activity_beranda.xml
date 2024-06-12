@@ -65,7 +65,9 @@
         android:elevation="8dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true">
 
         <ImageView
             android:layout_width="62dp"
@@ -145,7 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Hari Pertama"
+                    android:text="Workout Harian"
                     android:textColor="@color/blue3"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -171,7 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Hari Kedua"
+                    android:text="Workout HIIT"
                     android:textColor="@color/blue3"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -197,7 +199,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Hari Ketiga"
+                    android:text="Senam Aerobik"
                     android:textColor="@color/blue3"
                     android:textSize="16sp"
                     android:textStyle="bold" />
