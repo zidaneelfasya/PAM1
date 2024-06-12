@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="hijaulogo">#28D0B5</color>
     <color name="primary_900">#45521C</color>
     <color name="base_white">#FFFFFF</color>
@@ -15,4 +16,12 @@
     <color name="ijoori">#20A691</color>
     <color name="oren">#18657D</color>BFF1E9
     <color name="ijoori2">#BFF1E9</color>
+
+    <color name="blue">#28D0B5</color>
+    <color name="blue2">#20A691</color>
+    <color name="blue3">#187D6D</color>
+    <color name="blue4">#53D9C4</color>
+    <color name="blue5">#D4F6F0</color>
+    <color name="blue6">#A9ECE1</color>
+
 </resources>
