@@ -1,6 +1,9 @@
 package com.example.projekpam;
 
+import java.util.List;
+
 import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,11 +11,16 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+    private JadwalWorkoutActivity RecycleView;
+    private WorkoutAdapter adapter;
+    private List<Workout> workoutList;
+    private List<Hiit> HiitList;
     private ViewPager viewPager;
     private int[] layouts = {
             R.layout.onboarding_page1,
@@ -72,5 +80,6 @@ public class MainActivity extends AppCompatActivity {
             public void onPageScrollStateChanged(int state) {
             }
         });
+
     }
 }
