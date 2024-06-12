@@ -10,7 +10,7 @@ public class Post {
         // Diperlukan untuk Firebase
     }
 
-    public Post(String id, String title, String content) {
+    public Post(String id, String title, String content, String email) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -39,5 +39,12 @@ public class Post {
 
     public void setContent(String content) {
         this.content = content;
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
