@@ -6,7 +6,7 @@
         <string name="next">Next</string>
         <string name="previous">Previous</string>
         <string name="activity_jadwal_workout">Jadwal Workout</string>
-
+    <string name="default_web_client_id">343739054899-5973vm8ejahdd3a17hfsto1lbkf7v6ca.apps.googleusercontent.com</string>
 
     <string-array name="makanan_array">
         <item>Pilih Jenis Makanan</item>

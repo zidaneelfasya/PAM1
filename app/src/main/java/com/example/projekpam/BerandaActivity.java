@@ -21,7 +21,7 @@ public class BerandaActivity extends AppCompatActivity {
     private TextView tvGreeting;
     private ImageView ivGuidance; // Tambahkan variabel untuk ImageView panduan
 
-    private ImageView icExit,icInfo,icMotivation; // Tambahkan variabel untuk ImageView exit
+    private ImageView icExit,icInfo,icMotivation,icBeratIdeal; // Tambahkan variabel untuk ImageView exit
 
     private LinearLayout stepTracker, btnWorkoutHarian, btnWorkoutHiit, btnSenam; // Tambahkan variabel untuk LinearLayout pelacakan langkah
 
