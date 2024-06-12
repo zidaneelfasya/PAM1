@@ -1,30 +1,36 @@
 {
   "project_info": {
-
-    "project_number": "589072383287",
-    "project_id": "projectpam-caloricounter",
-    "storage_bucket": "projectpam-caloricounter.appspot.com"
-
+    "project_number": "445207721318",
+    "project_id": "pamproject-fc105",
+    "storage_bucket": "pamproject-fc105.appspot.com"
   },
   "client": [
     {
       "client_info": {
-
-        "mobilesdk_app_id": "1:589072383287:android:ce4edd54fda4a1b97daeb2",
-
+        "mobilesdk_app_id": "1:445207721318:android:3900c09f06ec7bd9ba04a7",
         "android_client_info": {
           "package_name": "com.example.projekpam"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "445207721318-4pcaloqbggurnbv17sm8ro8jn3c3rrra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyA_zKV52b-WoMVqpcniygG3TXZ0NZup8eo"
+          "current_key": "AIzaSyAI5Xh74SEvXko0mwfExML9B0VINhjq4AM"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445207721318-4pcaloqbggurnbv17sm8ro8jn3c3rrra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
