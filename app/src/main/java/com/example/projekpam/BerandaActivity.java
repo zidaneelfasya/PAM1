@@ -21,7 +21,9 @@ public class BerandaActivity extends AppCompatActivity {
     private TextView tvGreeting;
     private ImageView ivGuidance; // Tambahkan variabel untuk ImageView panduan
 
-    private ImageView icExit,icInfo,icMotivation,icBeratIdeal; // Tambahkan variabel untuk ImageView exit
+
+    private ImageView icExit,icInfo,icMotivation,icBeratIdeal,icComunity; // Tambahkan variabel untuk ImageView exit
+
 
     private LinearLayout stepTracker, btnWorkoutHarian, btnWorkoutHiit, btnSenam; // Tambahkan variabel untuk LinearLayout pelacakan langkah
 
@@ -45,6 +47,7 @@ public class BerandaActivity extends AppCompatActivity {
         icInfo = findViewById(R.id.ic_info);
         icMotivation = findViewById(R.id.ic_motivation);
         icBeratIdeal = findViewById(R.id.ic_berat_ideal);
+        icComunity = findViewById(R.id.ic_community);
         // Temukan LinearLayout dengan ID step_tracker
         stepTracker = findViewById(R.id.step_tracker);
         btnWorkoutHarian = findViewById(R.id.btn_workout_harian);
@@ -118,6 +121,15 @@ public class BerandaActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Redirect ke halaman login
                 Intent intent = new Intent(BerandaActivity.this, WorkoutSelectionActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        icComunity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect ke halaman login
+                Intent intent = new Intent(BerandaActivity.this, CommunityActivity.class);
                 startActivity(intent);
 
             }
