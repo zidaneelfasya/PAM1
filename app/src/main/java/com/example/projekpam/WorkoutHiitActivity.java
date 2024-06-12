@@ -22,10 +22,10 @@ public class WorkoutHiitActivity extends AppCompatActivity {
 
         // Create dummy data for demonstration purposes
         HiitList = new ArrayList<>();
-        HiitList.add(new Workout("Run in place", "x20", R.drawable.lari_ditempat));
-        HiitList.add(new Workout("Cross Jacks", "x10", R.drawable.cross_jacks));
-        HiitList.add(new Workout("Butt Kick", "x15", R.drawable.butt_kick));
-        HiitList.add(new Workout("Cross Climbers", "x10", R.drawable.cross_climbers));
+        HiitList.add(new Workout("Run in place", "20s", R.drawable.lari_ditempat));
+        HiitList.add(new Workout("Cross Jacks", "30s", R.drawable.cross_jacks));
+        HiitList.add(new Workout("Butt Kick", "20s", R.drawable.butt_kick));
+        HiitList.add(new Workout("Cross Climbers", "40s", R.drawable.cross_climbers));
 
         // Set the adapter for the RecyclerView
         HiitAdapter = new WorkoutAdapter(HiitList);

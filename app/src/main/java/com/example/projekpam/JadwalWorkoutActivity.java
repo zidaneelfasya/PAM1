@@ -27,7 +27,7 @@ public class JadwalWorkoutActivity extends AppCompatActivity {
         workoutList.add(new Workout("Push Up", "x10", R.drawable.pushupori));
         workoutList.add(new Workout("Squat", "x15", R.drawable.squatorii));
         workoutList.add(new Workout("Menekuk Lutut", "x10", R.drawable.lungess));
-        workoutList.add(new Workout("Peregangan Dada", "tahan sampai 30-50 detik", R.drawable.peregangan_dadaori));
+        workoutList.add(new Workout("Peregangan Dada", "tahan posisi 30-50 detik", R.drawable.peregangan_dadaori));
 
         // Set the adapter for the RecyclerView
         workoutAdapter = new WorkoutAdapter(workoutList);

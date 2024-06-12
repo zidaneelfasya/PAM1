@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/gradient_background">
 
+
     <!-- Gunakan sebuah View sebagai separator dengan tinggi 0dp dan berat 1 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topbar"
@@ -35,16 +36,15 @@
 
         <TextView
             android:id="@+id/tvNotesku"
-            android:layout_width="323dp"
-            android:layout_height="75dp"
-            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="90dp"
             android:gravity="center"
             android:text="Olahraga Kebugaran Badan"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="40dp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="62dp" />
+             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
