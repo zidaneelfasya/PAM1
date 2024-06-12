@@ -25,7 +25,7 @@
             android:exported="true"
             android:label="@string/activity_jadwal_workout" />
 
-
+        <activity
             android:name=".IMBActivity"
             android:exported="true" >
 
@@ -74,6 +74,10 @@
             />
         <activity
             android:name=".MenuActivity4"
+            android:exported="true"
+            />
+        <activity
+            android:name=".DukungMotivasiActivity"
             android:exported="true"
             />
         <activity
