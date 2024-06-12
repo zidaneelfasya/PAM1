@@ -20,8 +20,8 @@ public class BerandaActivity extends AppCompatActivity {
     private Button btncaloricounter;
     private TextView tvGreeting;
     private ImageView ivGuidance; // Tambahkan variabel untuk ImageView panduan
-    private ImageView icExit; // Tambahkan variabel untuk ImageView exit
-    private LinearLayout stepTracker; // Tambahkan variabel untuk LinearLayout pelacakan langkah
+    private ImageView icExit,icInfo; // Tambahkan variabel untuk ImageView exit
+    private LinearLayout stepTracker, btnWorkoutHarian, btnWorkoutHiit, btnSenam; // Tambahkan variabel untuk LinearLayout pelacakan langkah
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +40,13 @@ public class BerandaActivity extends AppCompatActivity {
 
         // Temukan ImageView dengan ID ic_exit
         icExit = findViewById(R.id.ic_exit);
+        icInfo = findViewById(R.id.ic_info);
 
         // Temukan LinearLayout dengan ID step_tracker
         stepTracker = findViewById(R.id.step_tracker);
-
+        btnWorkoutHarian = findViewById(R.id.btn_workout_harian);
+        btnWorkoutHiit = findViewById(R.id.btn_workout_hiit);
+        btnSenam = findViewById(R.id.btn_senam);
         // Dapatkan pengguna saat ini
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
@@ -91,6 +94,15 @@ public class BerandaActivity extends AppCompatActivity {
                 finish(); // Tutup activity saat ini
             }
         });
+        icInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect ke halaman login
+                Intent intent = new Intent(BerandaActivity.this, WorkoutSelectionActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         // Atur onClickListener untuk step_tracker
         stepTracker.setOnClickListener(new View.OnClickListener() {
@@ -101,5 +113,29 @@ public class BerandaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnWorkoutHarian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Arahkan ke StatsActivity
+                Intent intent = new Intent(BerandaActivity.this, JadwalWorkoutActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnWorkoutHiit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Arahkan ke StatsActivity
+                Intent intent = new Intent(BerandaActivity.this,WorkoutHiitActivity.class);
+                startActivity(intent);
+            }
+        });btnSenam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Arahkan ke StatsActivity
+                Intent intent = new Intent(BerandaActivity.this,SenamActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
