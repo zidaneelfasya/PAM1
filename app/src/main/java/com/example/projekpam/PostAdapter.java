@@ -32,6 +32,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         Post post = postList.get(position);
         holder.textViewTitle.setText(post.getTitle());
         holder.textViewContent.setText(post.getContent());
+        holder.textViewEmail.setText(post.getEmail());
 
         holder.buttonEdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +61,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     public static class PostViewHolder extends RecyclerView.ViewHolder {
         TextView textViewTitle;
         TextView textViewContent;
+        TextView textViewEmail;
         Button buttonEdit;
         Button buttonDelete;
 
@@ -67,6 +69,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textViewContent = itemView.findViewById(R.id.textViewContent);
+            textViewEmail = itemView.findViewById(R.id.textViewEmail);
             buttonEdit = itemView.findViewById(R.id.buttonEdit);
             buttonDelete = itemView.findViewById(R.id.buttonDelete);
         }
