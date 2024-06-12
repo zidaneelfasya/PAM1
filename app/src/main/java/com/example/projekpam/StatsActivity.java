@@ -2,6 +2,8 @@ package com.example.projekpam;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +16,7 @@ public class StatsActivity extends AppCompatActivity {
     private TextView caloriesTextView;
     private TextView distanceTextView;
     private TextView heartRateTextView;
+    private ImageView icBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,7 @@ public class StatsActivity extends AppCompatActivity {
         caloriesTextView = findViewById(R.id.caloriesTextView);
         distanceTextView = findViewById(R.id.distanceTextView);
         heartRateTextView = findViewById(R.id.heartRateTextView);
-
+        icBack = findViewById(R.id.icBack);
         // Set static data
         stepsTextView.setText("9,187");
         stepsLabelTextView.setText("steps");
@@ -37,5 +40,12 @@ public class StatsActivity extends AppCompatActivity {
         caloriesTextView.setText("457 kcal");
         distanceTextView.setText("7.26 km");
         heartRateTextView.setText("89 bpm");
+        icBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Kembali ke halaman sebelumnya
+                finish();
+            }
+        });
     }
 }

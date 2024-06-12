@@ -18,8 +18,6 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_exit"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
             android:layout_marginEnd="16dp"/>
 
         <TextView
@@ -103,16 +101,32 @@
 
     <!-- Bottom Navigation -->
 
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/step_tracker"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:text="Jadwal Workout"
-        android:textColor="@color/blue3"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/workout_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Workout"
+            android:textColor="@color/blue3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ic_info"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:src="@drawable/information"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -128,6 +142,7 @@
 
             <!-- Workout Cards -->
             <LinearLayout
+                android:id="@+id/btn_workout_harian"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginEnd="8dp"
@@ -140,8 +155,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_img" />
+                    android:src="@drawable/peregangan_dadaori" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -154,6 +170,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btn_workout_hiit"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginEnd="8dp"
@@ -167,7 +184,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_img" />
+                    android:src="@drawable/backgroundhiit2" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -180,6 +197,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btn_senam"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginEnd="8dp"
@@ -193,7 +211,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_img" />
+                    android:src="@drawable/cross_jacks" />
 
                 <TextView
                     android:layout_width="match_parent"

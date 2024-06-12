@@ -23,7 +23,7 @@
         <activity
             android:name=".WorkoutSelectionActivity"
             android:exported="true"
-            android:label="@string/activity_jadwal_workout">
+            android:label="@string/activity_jadwal_workout" />
 
         <activity
             android:name=".CaloriCounterActivity"
